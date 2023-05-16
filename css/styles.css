@@ -269,6 +269,30 @@ h1, h2, h3, h4, h5, h6, p, ul {
     fill: #f4f4fd;
 }
 
+/* Footer INPUT */
+
+.footer-input {
+    display: flex;
+}
+
+.footer-email {}
+
+.footer-btn {
+    display: flex;
+    width: 165px;
+    height: 40px;
+    gap: 16px;
+
+    padding: 8px 24px;
+
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    gap: 16px;
+}
+
+.footer-btn-icon {}
+
 
 /* STUDIO PAGE */
 /* Hero Section */
@@ -964,3 +988,5 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .form-btn[type=submit] {
     cursor: pointer;
 }
+
+
