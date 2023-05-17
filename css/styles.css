@@ -229,6 +229,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 .footer-media {
     display: block;
+    margin-right: 80px;
 }
 
 .footer-list {
@@ -272,26 +273,93 @@ h1, h2, h3, h4, h5, h6, p, ul {
 /* Footer INPUT */
 
 .footer-input {
-    display: flex;
+    position: relative;
+    top: 63px;
+    width: 453px;
+    height: 80px;
 }
 
-.footer-email {}
+.footer-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.footer-label {
+    display: block;
+    margin-bottom: 16px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.footer-email {
+    display: block;
+    width: 264px;
+    height: 40px;
+
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+
+}
 
 .footer-btn {
+position: absolute;
+bottom: 0;
+right: 0;
+
     display: flex;
     width: 165px;
     height: 40px;
     gap: 16px;
-
+    border: none;
     padding: 8px 24px;
 
     justify-content: center;
     align-items: center;
     padding: 8px 24px;
     gap: 16px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;  
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+
+    background: var(--blue-logo-color);
+    border-radius: 4px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-btn-icon {}
+.footer-btn:hover,
+.footer-btn:focus {
+    background-color: var(--green-color);
+}
+
+.footer-btn[type=submit] {
+    cursor: pointer;
+}
+
+.footer-btn-icon {
+    fill: #ffffff;
+}
 
 
 /* STUDIO PAGE */
@@ -887,12 +955,12 @@ h1, h2, h3, h4, h5, h6, p, ul {
     resize: none;
 
     font-weight: 400;
-        font-size: 12px;
-        line-height: 14px;
+    font-size: 12px;
+    line-height: 14px;
     
-        letter-spacing: 0.04em;
+    letter-spacing: 0.04em;
     
-        color: rgba(46, 47, 66, 0.4);
+    color: rgba(46, 47, 66, 0.4);
 }
 
 .form-comment::placeholder {
@@ -901,10 +969,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 .form-comment:focus {
     outline-color: #4D5AE5;
-}
-
-.form-comment:placeholder-shown {
-    color: rgba(46, 47, 66, 0.4);
 }
 
 .form-agreement {
