@@ -200,7 +200,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 .footer-container {
     display: flex;
-    align-items: baseline;
+    /* align-items: baseline; */
 }
 
 .footer-copyright {
@@ -273,16 +273,11 @@ h1, h2, h3, h4, h5, h6, p, ul {
 /* Footer INPUT */
 
 .footer-input {
-    position: relative;
-    top: 63px;
-    width: 453px;
-    height: 80px;
 }
 
 .footer-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
+   display: flex;
+   gap: 24px;
 }
 
 
@@ -302,6 +297,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
     display: block;
     width: 264px;
     height: 40px;
+    padding-left: 16px;
 
     background-color: transparent;
     border: 1px solid #FFFFFF;
@@ -318,10 +314,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 .footer-btn {
-position: absolute;
-bottom: 0;
-right: 0;
-
     display: flex;
     width: 165px;
     height: 40px;
@@ -763,6 +755,15 @@ right: 0;
     margin-bottom: 8px;
 }
 
+.gallary-link-txt {
+    font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+    
+        color: var(--main-text-color);
+}
+
 /* Overlay portfolio */
 
 .gallery-thumb {
@@ -961,10 +962,6 @@ right: 0;
     letter-spacing: 0.04em;
     
     color: rgba(46, 47, 66, 0.4);
-}
-
-.form-comment::placeholder {
-    
 }
 
 .form-comment:focus {
